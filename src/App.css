@@ -1,38 +1,216 @@
-.App {
-  text-align: center;
+*{
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+html{
+  background-color: #F9F9F9;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+h3{ 
+  color: black;
+  font-weight: 500;
+  margin: 0;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+p{
+  font-size: 1rem;
+  text-align: left;
+  line-height: 2rem;
+}
+.center{
+  width: 100%;
+  max-width: 75rem;
+  margin: 0 auto;
+  overflow: hidden;
+}
+.nav-bar{
+  width: 100%;
+  position: fixed;
+  z-index: 1000;
+  padding: 1rem;
+  background-color: #fdfde9;
+}
+.nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo{
+  max-width: 10rem;
+  margin: 0;
+}
+.img{
+  margin: 0;
+}
+.links{
+  display: flex;
+  gap: 2rem;
+  margin: 0;
+}
+.header{
+ padding-top: 8rem;
+ padding-bottom: 6rem;
+ background-image: url(./../public/massa.avif);
+}
+.text{
+  color: black;
+  max-width: 35rem;
+}
+h2{
+  font-size: 3rem;
+  color: #0A1128;
+}
+.btns{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2rem;
+  padding-bottom: 3rem;
+}
+.book-btn , .info-btn{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 1rem 0.25rem;
+  text-decoration: none;
+  color: #D7D7D7;
+  background-color: #0A1128;
+  height: 3rem;
+  width: 15rem;
+  padding: 0.4rem;
+  margin: 0rem;
+}
+.popular{
+  padding-top: 2rem;
+}
+.cards{
+  display: grid;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+h4{
+  font-size: 1.5rem;
+  color: #e4b70e;
+}
+.card{
+  background-color: #495E57;
+  border-radius: .5rem;
+  overflow: hidden;
+}
+.food-picture{
+ width: 100%;
+ max-height: 16rem;
+}
+.content{
   display: flex;
   flex-direction: column;
   align-items: center;
+  gap: 1rem;
+}
+.p-card{
+ color: white;
+ padding: 0.5rem;
+}
+.about-us{
+  margin-top: 4rem;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.about-img{
+  width: 55rem;
+}
+.chef{
+  max-width: 55rem;
+  border-radius: .5rem;
+}
+.about-txt{
+  max-width: 40rem;
+  margin-left: 3rem;
+  margin-right: 1rem;
+}
+h5{
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  color: #495E57;
+}
+.p-about{
+  margin-top: 0.5rem;
+  max-width: 40rem;
+}
+.book-table{
+ margin-top: 2rem;
+ display: flex;
+ flex-direction: row-reverse;
+ align-items: center;
+}
+.table{
+  max-width: 55rem;
+  border-radius: .5rem;
+}
+.reserve{
+  max-width: 40rem;
+  margin-right: 3rem;
+  margin-left: 2rem;
+}
+.book-btn-2{
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+  border-radius: 1rem 0.25rem;
+  text-decoration: none;
+  color: #D7D7D7;
+  background-color: #0A1128;
+  height: 3rem;
+  width: 15rem;
+  padding: 0.4rem;
+  margin-top: 3rem;
+}
+.footer{
+  margin-top: 3rem;
+  background-color: #0A1128;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+.center-footer{
+  display: flex;
+  width: 100%;
+  max-width: 75rem;
+  margin: 0 auto;
+  overflow: hidden;
+  justify-content: space-between;
+}
+.full-logo{
+  max-width: 7rem;
+}
+.hyperlinks{
+  display: flex;
+  gap: 1rem;
+  margin: 0;
+  flex-direction: column;
+  align-items: flex-end;
+}
+h6{
   color: white;
+  font-weight: 400;
+  margin: 0;
+  font-size: 1.5rem;
+}
+.credits{
+  background-color: #0A1128;
+  color: #D7D7D7;
+  display: flex;
+  justify-content: center;
+  border-top: 1px solid #e4b70e;
 }
 
-.App-link {
-  color: #61dafb;
-}
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+
+
+
+
+
+
+
+@media screen and (min-width: 70rem) {
+  .cards{
+      grid-template-columns: 1fr 1fr 1fr;
   }
 }
